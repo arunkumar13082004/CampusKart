@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+    android:id="@+id/cartFragment"
+    android:name="com.campuskart.app.fragment.CartFragment"
+    android:label="CartFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.campuskart.app.fragment.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.campuskart.app.fragment.FragementSettings"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_fragement_settings" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.campuskart.app.fragment.ProfileFragment"
+        android:label="profile"
+        tools:layout="@layout/fragment_fragement_settings" />
+    <fragment
+        android:id="@+id/lostAndFound"
+        android:name="com.campuskart.app.fragment.LostAndFound"
+        android:label="fragment_lost_and_found"
+        tools:layout="@layout/fragment_lost_and_found" />
+</navigation>

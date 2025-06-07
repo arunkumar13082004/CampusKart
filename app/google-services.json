@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "151498941628",
+    "firebase_url": "https://campusx-a99d3-default-rtdb.firebaseio.com",
+    "project_id": "campusx-a99d3",
+    "storage_bucket": "campusx-a99d3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151498941628:android:60c306a4b15513e3029cb9",
+        "android_client_info": {
+          "package_name": "com.campuskart.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC2_H8BMUeRlLIsFFOajE1c2FceDMP8NU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151498941628:android:287be067db863eba029cb9",
+        "android_client_info": {
+          "package_name": "com.campuskart.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC2_H8BMUeRlLIsFFOajE1c2FceDMP8NU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

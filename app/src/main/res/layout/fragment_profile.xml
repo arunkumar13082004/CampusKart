@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment"
+    android:background="@color/white"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminate="true"
+            android:foregroundGravity="center"
+            android:layout_centerInParent="true"
+            />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="30sp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:orientation="horizontal">
+
+>
+    </LinearLayout>
+
+<!--    <ImageView-->
+
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:background="@drawable/circle"-->
+<!--        android:src="@drawable/ic_baseline_profile_image_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0"-->
+<!--        />-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="239dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="100dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/profile" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.28">
+
+        <LinearLayout
+            android:layout_marginTop="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_6" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="pnum, lnum"
+                    android:letterSpacing="0.01"
+                    android:text="Name"
+                    android:textColor="#4E4637"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/USER_NAME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="pnum, lnum"
+                    android:text="-------"
+                    android:letterSpacing="0.01"
+                    android:textSize="20sp"
+                    android:textColor="#4E4637"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41sp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="pnum, lnum"
+                    android:letterSpacing="0.01"
+                    android:text="Scholar Id"
+                    android:textColor="#4E4637"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/SCHOLAR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="pnum, lnum"
+                    android:letterSpacing="0.01"
+                    android:textSize="20sp"
+                    android:text="-------"
+                    android:textColor="#4E4637"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41sp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_11" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="pnum, lnum"
+                    android:letterSpacing="0.01"
+                    android:text="Email Id"
+                    android:textColor="#4E4637"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/EMAIL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="pnum, lnum"
+                    android:letterSpacing="0.01"
+                    android:textSize="20sp"
+                    android:text="-------"
+                    android:textColor="#4E4637"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41sp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_10" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="pnum, lnum"
+                    android:letterSpacing="0.01"
+                    android:text="Phone No."
+                    android:textColor="#4E4637"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/PHONE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFeatureSettings="pnum, lnum"
+                    android:letterSpacing="0.01"
+                    android:textSize="20sp"
+                    android:text="--------"
+                    android:textColor="#4E4637"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="15sp"-->
+<!--                android:padding="5dp"-->
+
+<!--                android:layout_gravity="center"-->
+<!--                >-->
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/soldButton"-->
+<!--                    android:background="@drawable/rounded_rectangle"-->
+<!--                    android:elevation="5sp"-->
+<!--                    android:layout_width="160sp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/accept"-->
+<!--                    android:backgroundTint="#FEC202"-->
+<!--                    android:text="SOLD ITEMS"-->
+<!--                    android:textColor="#4E4637"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:layout_marginEnd="17dp"/>-->
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/onSaleButton"-->
+<!--                    android:background="@drawable/rounded_rectangle"-->
+<!--                    android:elevation="5sp"-->
+<!--                    android:layout_width="160sp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/accept"-->
+<!--                    android:backgroundTint="#FEC202"-->
+<!--                    android:text="ITEM ON SALE"-->
+<!--                    android:layout_marginStart="20sp"-->
+<!--                    android:textColor="#4E4637"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_gravity="end"/>-->
+<!--            </LinearLayout>-->
+
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/lostndFoundButton"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:background="@drawable/rounded_rectangle"-->
+<!--                android:elevation="5sp"-->
+<!--                android:layout_width="200sp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:contentDescription="@string/accept"-->
+<!--                android:backgroundTint="#FEC202"-->
+<!--                android:text="LOST/FOUND ITEMS"-->
+<!--                android:textColor="#4E4637"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
+
+
+
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

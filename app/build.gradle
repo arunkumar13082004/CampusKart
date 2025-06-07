@@ -1,0 +1,126 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.campuskart.app'
+
+    compileSdk 34
+
+    packagingOptions {
+        pickFirst 'META-INF/LICENSE.txt'
+    }
+
+    defaultConfig {
+        applicationId "com.campuskart.app"
+        minSdk 21
+        targetSdk 34
+        versionCode 2
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    // your existing dependencies...
+
+    // implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.1.0'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.1.1'
+    def nav_version = "2.5.3"
+    //imageSlider
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //navigation component dependency
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // smooth navigation bar
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    //firebase
+
+    // implementation 'com.google.firebase:firebase-analytics-ktx'
+    //implementation 'com.google.firebase:firebase-auth'
+    //  implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.firebase:firebase-database-ktx:20.1.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.1.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.2'
+    implementation platform('com.google.firebase:firebase-bom:31.2.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+
+    //smtpserver
+    implementation 'com.github.1902shubh:SendMail:1.0.0'
+
+//    implementation files('libs/your-library-name.jar')
+
+
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+    //imagepicker
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+    implementation "androidx.activity:activity-ktx:1.2.3"
+    implementation "androidx.fragment:fragment-ktx:1.3.3"
+    //swipe to refresh
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    //imageZooming
+    implementation 'com.jsibbold:zoomage:1.3.1'
+
+    //OkHTTP
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+
+    //volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+//    upload image
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation 'com.cloudinary:cloudinary-android:1.28.0'
+
+}
